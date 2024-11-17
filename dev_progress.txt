@@ -1,0 +1,74 @@
+20241103
+https://rogueliketutorials.com/tutorials/tcod/v2/
+Progress:
+
+[x] part 1
+[x] part 2
+[x] part 3
+[x] part 4
+[x] part 5
+[ ] part 6
+
+Still need to complete part 6
+
+-----------
+20241106
+It was me, Buster.  I did it all.
+
+PART 6: COMPLETE
+NEXT PART TODO: PART 7
+
+
+
+-----------
+20241107, 11:06 UTC
+
+PART 7: mostly complete
+
+
+TODO: Finish edits to input_handlers.py that allow scrolling  (the 'CURSOR_Y_KEYS' to add just below the "GameOverEventHandler(EVentHandler)" class
+
+------------
+20241107, 23:56 UTC
+
+part 7: COMPLETE
+now ready to start part 8
+(NOTE: Part 8 starts with a section about refactoring the code; that part has already been followed.)
+
+------------
+20241110, Sunday, 12:33 UTC
+
+part 8: COMPLETE
+Implemented inventory system.  Feels like wrote hundreds of lines of code, completely refactored a lot of how things fit together.  It's hard to wrap head around what's going on at this point.  Individual parts are clear to understand, but it's getting significantly harder to see the big picture, how it all fits together, and most importantly, how to add features in the future.  We'll see how this goes from this point on. 
+
+
+----------
+20241111, 1105 UTC
+
+PART 9: IN PROGRESS
+
+LEFT OFF AT: Just added "self.engine.event_Handler = LookHandler(self.engine)" to input_handlers.py.  Was about to begin adding functionality to "ai.py" in preparation for writing functionality for the "confusion" scroll.  
+
+------------
+20241112, 1100 UTC
+
+PART 9: IN PROGRESS
+
+LEFT OFF AT: Finished implementing Confusion scroll, now about to implement Fireball scroll.  No fundamental changes to the engine need to be made to add this; just need to know how to add content in the same manner content has already been added in previous ways.  May even attempt to add it manually instead of following instructions at first, to see how it goes.
+
+
+---
+20241113, 1113 UTC
+
+PART 9: DONE
+
+LEFT OFF AT: Found a glitch, if the player character dies as a result of being in the blast radius of the player's own Fireball spell, the player can still move around, fight etc. in spite of dying.  Want to see about solving that before moving on.
+
+20241114, 1105 UTC
+
+PART 10: IN PROGRESS
+
+LEFT OFF AT: The part in the tutorial where main.py was going to be edited.  Quote:
+"In order to make these changes work, we need to adjust the way that the input handlers are… well, handled. What we’ll want to do is have the handler exist on its own in main.py rather than be part of the Engine class."
+
+The author briefly explains what changes need to be made and why, but I'm still not getting the thought process on how the writer made these design decisions, and what had to be done mentally to visualize and understand these underlying mechanics and how they all fit together. 
