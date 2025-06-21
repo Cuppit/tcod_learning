@@ -161,7 +161,6 @@ class EventHandler(BaseEventHandler):
 
         
     def on_render(self, console: tcod.Console) -> None:
-        print(type(console))
         self.engine.render(console)
     
 
